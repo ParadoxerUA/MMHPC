@@ -18,6 +18,10 @@ async def create_table(engine):
                                   forecast_text varchar(150))''')
 
 
+async def init_connection():
+    pass
+
+
 async def populate():
     async with create_engine(user='student',
                              database='mmhpc',
